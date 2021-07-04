@@ -14,10 +14,11 @@
 
         <script src="panelsnap.js" defer></script>
         <script>
-            document.addEventListener("DOMContentLoaded", function () {new PanelSnap();});
+            document.addEventListener("DOMContentLoaded", function () { new PanelSnap(); });
         </script>
     </head>
     <body>
+        <div id="scroll-progress-bar"></div>
         <section class="centered" id="header">
             <div>
                 <h1 class="about-header" style="color: var(--red)">Hey,</h1>
@@ -63,5 +64,14 @@
                 </div>
             </div>
         </section>
+        <script>
+            let progressBar = document.getElementById("scroll-progress-bar");
+            let height = document.body.scrollHeight - window.innerHeight;
+
+            window.onscroll = function(){
+                let progress = (window.pageYOffset / height) * 100;
+                progressBar.style.width = progress + "%";
+            }
+        </script>
       </body>
 </html>

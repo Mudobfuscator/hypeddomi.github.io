@@ -24,6 +24,13 @@ html {
     scroll-snap-type: y mandatory;
 }
 
+#scroll-progress-bar{
+    position: fixed;
+    width: 100%;
+    height: 0.5vw;
+    background-color: var(--red);
+}
+
 .centered{
     display: flex;
     flex-direction: column;
@@ -75,6 +82,7 @@ html {
         background-color: var(--indigo);
         color: var(--white);
         text-shadow: 3px 2px 2px rgba(199, 130, 59, 0.15);
+        color-scheme: dark;
     }
 }
 
