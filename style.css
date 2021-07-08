@@ -51,6 +51,7 @@ html {
 .divider {
     height: 4vw;
     width: 30vw;
+    -webkit-user-drag: none;
 }
 
 .row {
@@ -76,6 +77,10 @@ html {
     width: 10vw;
 }
 
+svg {
+    color: rgb(12, 14, 18);
+}
+
 @media (prefers-color-scheme: dark){
     html {
         background-color: var(--indigo);
@@ -83,9 +88,16 @@ html {
         text-shadow: 3px 2px 2px rgba(199, 130, 59, 0.15);
         color-scheme: dark;
     }
+    svg {
+        color: rgb(236, 243, 252);
+    }
 }
 
 @media only screen and (max-width: 1024px) {
+    #scroll-progress-bar{
+        height: 1.5vw;
+    }
+
     .about-header{
         font-size: 12vw;
         font-weight: 400;
