@@ -296,10 +296,14 @@ svg {
 }
 
 @media only screen and (max-width: 1024px) {
+  html{
+    scroll-snap-type: none;
+  }
+  
   #scroll-progress-bar{
       height: 1.5vw;
   }
-  
+
   .about-header{
       font-size: 12vw;
       font-weight: 400;
