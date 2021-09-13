@@ -1,24 +1,81 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-us">
-    <head>
-        <!-- Meta tags & icons -->
-        <meta charset="utf-8">
-        <title>HypedDomi</title>
-        <meta name="description" content="Hey, I'm Dominik.">
-        <link rel="shortcut icon" type="image/png" href="https://avatars.githubusercontent.com/u/50876016"/>
-        <link rel="stylesheet" href="style.css">
+<head>
+    <!-- Meta tags & icons -->
+    <meta charset="utf-8">
+    <title>HypedDomi</title>
+    <meta name="description" content="Hey, I'm Dominik.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="https://avatars.githubusercontent.com/u/50876016"/>
+    <link rel="stylesheet" href="main.css">
 
-        <meta property="og:type" content= "website" />
-        <meta property="og:site_name" content="HypedDomi" />
-        <meta property="og:image" itemprop="image primaryImageOfPage" content="https://avatars.githubusercontent.com/u/50876016" />
+    <meta property="og:type" content= "website" />
+    <meta property="og:site_name" content="HypedDomi" />
+    <meta property="og:image" itemprop="image primaryImageOfPage" content="https://avatars.githubusercontent.com/u/50876016" />
 
-        <script src="panelsnap.js" defer></script>
-        <script>
-            document.addEventListener("DOMContentLoaded", function () { new PanelSnap(); });
-        </script>
-    </head>
-    <body>
-        <div id="scroll-progress-bar"></div>
+    <script src="panelsnap.js" defer></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () { new PanelSnap(); });
+    </script>
+</head>
+<body class="theme-dark">
+    <div id="scroll-progress-bar"></div>
+    <section>
+        <header>
+            <div>
+                <div id="popout">
+                    <div class="popout-header"></div>
+                    <div class="popout-body">
+                        <div class="avatar">
+                            <img src="images/avatar.png">
+                            <div class="status"></div>
+                        </div>
+                        <h2 class="username">HypedDomi</h2>
+                        <div id="badgeList">
+                            <div class="badge logo">
+                                <a href="https://discord.com/users/354191516979429376" target="_blank">
+                                    <img src="images/social/discord.svg" alt="discord">
+                                </a>
+                            </div>
+
+                            <div class="badge logo">
+                                <a href="https://github.com/HypedDomi" target="_blank">
+                                    <img src="images/social/github.svg" alt="github">
+                                </a>
+                            </div>
+
+                            <div class="badge logo">
+                                <a href="mailto:domi@bambus.me" target="_blank">
+                                    <img src="images/social/mail.svg" alt="mail">
+                                </a>
+                            </div>
+
+                            <div class="badge logo">
+                                <a href="https://www.instagram.com/hypeddomi" target="_blank">
+                                    <img src="images/social/instagram.svg" alt="instagram">
+                                </a>
+                            </div>
+
+                            <div class="badge logo">
+                                <a href="https://www.paypal.com/paypalme/dominik1711" target="_blank">
+                                    <img src="images/social/paypal.svg" alt="paypal">
+                                </a>
+                            </div>
+                        </div>
+                        <h4 class="about-me">Professional Retard</h4>
+                        <div class="activity">
+                            <a href="https://discord.com/users/354191516979429376" style="cursor: default;">
+                                <img src="https://lanyard-profile-readme.vercel.app/api/354191516979429376?bg=transparent&hideDiscrim=true"/>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="popout-footer">
+                        <input type="text" placeholder="Message @HypedDomi">
+                    </div>
+                </div>
+            </div>
+        </header>
+    </section>
         <section class="centered" id="header">
             <div>
                 <h1 class="about-header" style="color: var(--red)">Hey,</h1>
@@ -118,5 +175,5 @@
                 progressBar.style.width = progress + "%";
             }
         </script>
-      </body>
+</body>
 </html>
